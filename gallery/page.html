@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/slimbox.css">
+	<title>Галерея</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slimbox2.js"></script>
+	
+</head>
+<body>
+
+	<ul id="gallery">
+		<li><a rel="lightbox-gallery" title="Блудсикер" href="img/bs.jpg"><img src="img/bs-min.jpg"></a></li>		
+		<li><a rel="lightbox-gallery" title="Королева боли" href="img/qop.jpg"><img src="img/qop-min.jpg"></a></li>
+		<li><a rel="lightbox-gallery" title="Dota 2"href="img/dota2.jpg"><img src="img/dota2-min.jpg"></a></li>
+		<li><a rel="lightbox-gallery" title="Tiny" href="img/tiny.jpg"><img src="img/tiny-min.jpg"></a></li>
+		<li><a rel="lightbox-gallery" title="Venomanser" href="img/ven.jpg"><img src="img/ven-min.jpg"></a></li>
+	</ul>
+	<script type="text/javascript">
+		$(function(){	
+			$('#gallery img').hover(function() {
+				$(this).stop().animate({opacity: 1, boxShadow: '0 0 15px #666' }, 400);
+
+			}, function() {
+				$(this).stop().animate({opacity: 0.6, boxShadow: '0 0 5px #333'}, 400);
+			});
+		});
+	</script>
+	<!-- Slim Box -->
+	
+</body>
+</html>
